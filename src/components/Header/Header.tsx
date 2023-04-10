@@ -6,10 +6,10 @@ export const Header = ({ pageType } : { pageType: string }) => {
     <HeaderContaner>
       <HeaderTitleFlex>
         <HeaderIconBox>
-          <Image src="/powellicon.svg" alt="powell icon" width={50} height={50} />
+          <Image src="/powellicon.svg" alt="powell icon" width={60} height={60} />
         </HeaderIconBox>
         <HeaderTitle>
-          甲本 健太 <span style={{ fontSize: 25 }}>/ KOMOTO Kenta</span>
+          甲本 健太 <span style={{ fontSize: 30 }}>/ KOMOTO Kenta</span>
         </HeaderTitle>
       </HeaderTitleFlex>
       <HeaderLinkFlex>
