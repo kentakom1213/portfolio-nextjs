@@ -1,12 +1,21 @@
 import Image from 'next/image'
 import { Layout } from '@/layout/Layout'
+import { AboutImage, AboutText } from '@/components/About/About';
+import { AboutContentsFrame, AboutImageFrame, AboutTextFrame } from '@/components/About/AboutStyles';
 
-export const Home = () => {
+export const About = () => {
   return (
-      <Layout pageType="about">
-        <Image src="/images/seattle1.JPG" alt='komoto kenta' width={500} height={600} style={{ objectFit: 'contain' }}></Image>
-      </Layout>
+    <Layout pageType="about" width={1300}>
+      <AboutContentsFrame>
+        <AboutImageFrame>
+          <AboutImage />
+        </AboutImageFrame>
+        <AboutTextFrame>
+          <AboutText />
+        </AboutTextFrame>
+      </AboutContentsFrame>
+    </Layout>
   )
 };
 
-export default Home;
+export default About;

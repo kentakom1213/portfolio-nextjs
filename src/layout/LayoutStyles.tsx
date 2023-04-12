@@ -1,7 +1,7 @@
 import styled  from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ width: number }>`
   width: 90%;
-  max-width: 1000px;
+  max-width: ${props => props.width ? props.width : 1000}px};
   margin: 0 auto;
 `;

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Container } from "./LayoutStyles";
 import { Header } from "../components/Header/Header";
 
-export const Layout = ({ pageType, children }: any) => {
+export const Layout = ({ pageType, width, children }: any) => {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export const Layout = ({ pageType, children }: any) => {
         <link rel="icon" href="/powellicon.svg" />
       </Head>
       <Header pageType={ pageType } />
-      <Container>
+      <Container width={width}>
         {children}
       </Container>
     </>
