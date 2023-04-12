@@ -19,6 +19,9 @@ export const Header = ({ pageType } : { pageType: string }) => {
         <HeaderLink href="/skills" underline={pageType === "skills"}>
           skills
         </HeaderLink>
+        <HeaderLink href="/experience" underline={pageType === "experience"}>
+          experience
+        </HeaderLink>
         <HeaderLink href="/contact" underline={pageType === "contact"}>
           contact
         </HeaderLink>

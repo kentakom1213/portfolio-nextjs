@@ -15,12 +15,12 @@ export const AboutTextFrame = styled.div`
   padding: 5% 80px;
 `;
 
-export const AboutHeadLine = styled.h1<{ fontSize: number }>`
+export const AboutHeadLine = styled.h2<{ fontSize: number }>`
   font-size: ${props => props.fontSize}px;
   padding: 20px 0;
 `;
 
-export const AboutHeadLineTag = styled.h2`
+export const AboutHeadLineTag = styled.div`
   width: 200px;
   font-size: 25px;
   opacity: 0.5;
