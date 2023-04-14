@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SpanColor } from "@/styles/Global/Color";
-import { ExperienceFrame, ExperienceGrid, ExperienceGridImage, ExperienceGridText, ExperienceSubTitle, ExperienceText, ExperienceTitle } from "./ExperienceStyles";
+import { ExperienceFrame, ExperienceGrid, ExperienceGridImage, ExperienceGridText, ExperienceKeisanryoImage, ExperienceKeisanryoText, ExperienceOptimizeImage, ExperienceOptimizeText, ExperienceSubTitle, ExperienceText, ExperienceTitle, ExperienceZemiGrid } from "./ExperienceStyles";
 
 export const ExperienceContents = ({ title, children }: { title: string, children: any }) => {
   return (
@@ -45,7 +45,7 @@ export const ExperienceKyopro = () => {
           <Image src="/images/experience/atcoder-rating-hist.png" alt="AtCoderのレート遷移" fill style={{ borderRadius: "20px", objectFit: "contain" }}></Image>
         </ExperienceGridImage>
       </ExperienceGrid>
-      <ExperienceGrid>
+      <ExperienceGrid ratio={[3, 4]}>
         <ExperienceSubpage title="実装したアルゴリズム">
           右は、プログラミング言語Rustを用いて2分探索というアルゴリズムを実装したものです。
           競技プログラミングでは、このようなアルゴリズムをコンテスト時間内に完成させて、あらゆる問題に正解させなければならないため、
@@ -100,6 +100,26 @@ export const ExperienceSemiar = () => {
         現在は名古屋大学の1,2年生を中心に20名ほどが参加しており、そのテーマは一冊の本を輪読形式で読み進めるものから、互いの得意分野を発表し合うもの、
         資格の合格に向けて一緒に取り組むものなど様々です。ここでは、その自主ゼミで自分が発表した際のスライドの一部を紹介します。
       </ExperienceText>
+      <ExperienceZemiGrid>
+        <ExperienceOptimizeText>
+          <ExperienceSubpage title="パラメータの最適化">
+            「ゼロから作るディープラーニング」という書籍を輪読し、実際に AI を作ってみるというテーマのゼミでの発表です。
+            ニューラルネットワークにおけるパラメータとは何かというレベルから、いかにして様々なパラメータを最適になるように調整していくかという内容まで、段階的に説明しました。
+          </ExperienceSubpage>
+        </ExperienceOptimizeText>
+        <ExperienceOptimizeImage>
+          <Image src="/images/experience/parameter_optimization.png" alt="パラメータの最適化" fill style={{ borderRadius: "10px", objectFit: "cover" }}></Image>
+        </ExperienceOptimizeImage>
+        <ExperienceKeisanryoText>
+          <ExperienceSubpage title="計算量を学ぼう">
+            プログラムの速度を大まかに見積もるのに必要な計算量という概念をテーマにした発表です。
+            「プログラムをいかにして高速化するか」というテーマで基本的なアルゴリズムについても踏み込んで解説しています。
+          </ExperienceSubpage>
+        </ExperienceKeisanryoText>
+        <ExperienceKeisanryoImage>
+          <Image src="/images/experience/keisanryo.png" alt="計算量" fill style={{ borderRadius: "10px", objectFit: "cover" }}></Image>
+        </ExperienceKeisanryoImage>
+      </ExperienceZemiGrid>
     </ExperienceContents>
   );
 };
