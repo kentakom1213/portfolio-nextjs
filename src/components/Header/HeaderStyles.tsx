@@ -45,7 +45,7 @@ export const HeaderTitle = styled.h1`
 export const HeaderSubTitle = styled.span`
   font-size: 30px;
   ${sp`
-  font-size: 20px;
+  font-size: 15px;
   `}
 `;
 
