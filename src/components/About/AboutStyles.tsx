@@ -27,7 +27,7 @@ export const AboutTextFrame = styled.div`
 `;
 
 export const AboutTitle = styled.h1`
-  font-size: 50px;
+  font-size: 45px;
   padding: 15px 0;
   ${sp`
     font-size: 30px;

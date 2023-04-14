@@ -3,6 +3,7 @@ import { pc, sp, tab } from "../../styles/Global/media";
 
 export const HeaderContaner = styled.header`
   width: 100%;
+  margin: 0 auto 40px;
   padding: 10px 50px;
   ${pc`
     height: 120px;
@@ -25,7 +26,7 @@ export const HeaderTitleFlex = styled.div`
     height: 80px;
   `}
 `;
- 
+
 export const HeaderIconBox = styled.div`
   position: relative;
   width: 80px;

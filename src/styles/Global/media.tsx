@@ -6,7 +6,7 @@ import {
 } from 'styled-components';
 
 const pc_min_width: number = 1050;
-const tab_min_width: number = 560;
+const tab_min_width: number = 700;
 
 export const sp = (
   first: CSSObject | TemplateStringsArray,
