@@ -9,20 +9,38 @@ export const AboutContentsFrame = styled.div`
 `;
 
 export const AboutImageFrame = styled.div`
-  position: relative;
   padding: 5%;
+  position: relative;
   ${tab`
     height: 500px;
+  `}
+  ${sp`
+    height: 400px;
   `}
 `;
 
 export const AboutTextFrame = styled.div`
   padding: 5% 80px;
+  ${sp`
+    padding: 5% 20px;
+  `}
+`;
+
+export const AboutTitle = styled.h1`
+  font-size: 50px;
+  padding: 15px 0;
+  ${sp`
+    font-size: 30px;
+    padding: 10px 0;
+  `}
 `;
 
 export const AboutHeadLine = styled.h2<{ fontSize: number }>`
   font-size: ${props => props.fontSize}px;
   padding: 15px 0;
+  ${sp`
+    font-size: 20px;
+  `}
 `;
 
 export const AboutHeadLineTag = styled.div`
@@ -30,4 +48,7 @@ export const AboutHeadLineTag = styled.div`
   font-size: 25px;
   opacity: 0.5;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  ${sp`
+    font-size: 20px;
+  `}
 `;

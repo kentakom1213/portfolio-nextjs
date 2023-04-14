@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AboutHeadLine, AboutHeadLineTag } from './AboutStyles';
+import { AboutHeadLine, AboutHeadLineTag, AboutTitle } from './AboutStyles';
 
 export const AboutImage = () => {
   return (
@@ -10,9 +10,9 @@ export const AboutImage = () => {
 export const AboutText = () => {
   return (
     <>
-      <AboutHeadLine fontSize={50}>
+      <AboutTitle>
         <ruby>甲本 健太<rt>こうもと けんた</rt></ruby>
-      </AboutHeadLine>
+      </AboutTitle>
       <AboutHeadLine fontSize={30}>
         <AboutHeadLineTag>
           所属
