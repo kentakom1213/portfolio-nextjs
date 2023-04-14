@@ -1,4 +1,4 @@
-import { HeaderContaner, HeaderIconBox, HeaderLink, HeaderLinkFlex, HeaderTitle, HeaderTitleFlex } from "./HeaderStyles";
+import { HeaderContaner, HeaderIconBox, HeaderLink, HeaderLinkFlex, HeaderTitle, HeaderSubTitle, HeaderTitleFlex } from "./HeaderStyles";
 import Image from "next/image";
 
 export const Header = ({ pageType } : { pageType: string }) => {
@@ -6,10 +6,10 @@ export const Header = ({ pageType } : { pageType: string }) => {
     <HeaderContaner>
       <HeaderTitleFlex>
         <HeaderIconBox>
-          <Image src="/powellicon.svg" alt="powell icon" width={60} height={60} />
+          <Image src="/powellicon.svg" alt="powell icon" fill />
         </HeaderIconBox>
         <HeaderTitle>
-          甲本 健太 <span style={{ fontSize: 30 }}>/ KOMOTO Kenta</span>
+          甲本 健太 <HeaderSubTitle>/ KOMOTO Kenta</HeaderSubTitle>
         </HeaderTitle>
       </HeaderTitleFlex>
       <HeaderLinkFlex>

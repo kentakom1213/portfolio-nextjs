@@ -6,8 +6,6 @@ export const AboutContentsFrame = styled.div`
   ${pc`
     grid-template-columns: 1fr 1fr;
   `}
-  ${sp`
-  `}
 `;
 
 export const AboutImageFrame = styled.div`
