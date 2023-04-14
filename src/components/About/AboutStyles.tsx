@@ -1,14 +1,21 @@
 import styled from "styled-components";
+import { pc, sp, tab } from "../../styles/Global/media";
 
 export const AboutContentsFrame = styled.div`
-  height: 800px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  ${pc`
+    grid-template-columns: 1fr 1fr;
+  `}
+  ${sp`
+  `}
 `;
 
 export const AboutImageFrame = styled.div`
   position: relative;
   padding: 5%;
+  ${tab`
+    height: 500px;
+  `}
 `;
 
 export const AboutTextFrame = styled.div`
@@ -17,7 +24,7 @@ export const AboutTextFrame = styled.div`
 
 export const AboutHeadLine = styled.h2<{ fontSize: number }>`
   font-size: ${props => props.fontSize}px;
-  padding: 20px 0;
+  padding: 15px 0;
 `;
 
 export const AboutHeadLineTag = styled.div`

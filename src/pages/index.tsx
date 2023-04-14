@@ -5,7 +5,7 @@ import { AboutContentsFrame, AboutImageFrame, AboutTextFrame } from '@/component
 
 export const About = () => {
   return (
-    <Layout pageType="about" width={1300}>
+    <Layout pageType="about" width={1100}>
       <AboutContentsFrame>
         <AboutImageFrame>
           <AboutImage />
