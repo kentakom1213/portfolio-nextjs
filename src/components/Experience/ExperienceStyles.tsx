@@ -135,7 +135,7 @@ export const ExperienceOptimizeText = styled.div`
       font-size: 50px;
       float: right;
       position: relative;
-      left: -80px;
+      left: -40px;
       top: -10px
     }
   `}
@@ -147,7 +147,7 @@ export const ExperienceOptimizeText = styled.div`
       font-size: 40px;
       float: right;
       position: relative;
-      left: -50px;
+      left: -30px;
       top: 5px;
     }
   `}
@@ -181,9 +181,9 @@ export const ExperienceKeisanryoText = styled.div`
     &:before {
       content: "←";
       font-size: 50px;
-      float: right;
+      float: left;
       position: relative;
-      left: -350px;
+      left: 30px;
       top: -10px;
     }
   `}
@@ -194,9 +194,9 @@ export const ExperienceKeisanryoText = styled.div`
     &:before {
       content: "←";
       font-size: 40px;
-      float: right;
+      float: left;
       position: relative;
-      left: -270px;
+      left: 30px;
       top: 5px;
     }
   `}
