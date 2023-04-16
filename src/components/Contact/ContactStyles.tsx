@@ -90,6 +90,9 @@ export const ContactFormInput = styled.input`
   ${tab`
     font-size: 18px;
   `}
+  ${sp`
+    font-size: 18px;
+  `}
 `;
 
 export const ContactFormTextarea = styled.textarea`
@@ -106,6 +109,9 @@ export const ContactFormTextarea = styled.textarea`
   `}
   ${tab`
     height: 150px;
+    font-size: 18px;
+  `}
+  ${sp`
     font-size: 18px;
   `}
 `;

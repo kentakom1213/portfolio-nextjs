@@ -29,7 +29,7 @@ export const ContactForm = () => {
   if (state.succeeded) {
     return (
       <ContactSuccessed>
-        <h1>送信が完了しました！</h1>
+        <h1>送信が完了しました</h1>
         <br />
         <p>ありがとうございます。返信をお待ちください。</p>
       </ContactSuccessed>
