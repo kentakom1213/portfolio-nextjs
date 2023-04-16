@@ -38,8 +38,17 @@ export const ContactIconBox = styled.div`
 `;
 
 export const ContactFormFrame = styled.div`
-  margin: 0 auto;
-  text-align: left;
+  margin: 40px auto;
+  padding: 30px;
+  position: relative;
+  border: 3px solid #000;
+  border-radius: 20px;
+  ${sp`
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 15px;
+  `}
   ${pc`
     width: 700px;
   `}
@@ -49,32 +58,74 @@ export const ContactSuccessed = styled.div`
   text-align: center;
 `;
 
+export const ContactFormLabelFrame = styled.div`
+  margin: 20px 0 10px;
+`;
+
 export const ContactFormLabel = styled.label`
-  font-size: 20px;
+  ${pc`
+    font-size: 20px;
+  `}
+  ${tab`
+    font-size: 18px;
+  `}
+  ${sp`
+    font-size: 16px;
+  `}
 `;
 
 export const ContactFormInput = styled.input`
-  font-size: 20px;
+  width: 300px;
+  max-width: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  :hover {
+  }
+  :focus {
+    outline: none;
+  }
+  ${pc`
+    font-size: 20px;
+  `}
+  ${tab`
+    font-size: 18px;
+  `}
 `;
 
 export const ContactFormTextarea = styled.textarea`
   width: 100%;
-  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  resize: vertical;
+  :focus {
+    outline: none;
+  }
+  ${pc`
+    height: 200px;
+    font-size: 20px;
+  `}
+  ${tab`
+    height: 150px;
+    font-size: 18px;
+  `}
+`;
+
+export const ContactButtonFrame = styled.div`
+  margin: 20px 0 0;
+  text-align: right;
 `;
 
 export const ContactFormButton = styled.button`
+  height: 40px;
+  width: 80px;
   border-radius: 10px;
   border: 2px solid #000;
   background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 10px;
   :hover {
     background-color: #000;
     color: white;
   }
-  ${pc`
-    height: 40px;
-    width: 80px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 10px;
-  `}
 `;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useForm, ValidationError } from '@formspree/react';
-import { ContactIconBox, ContactIcons, ContactSuccessed, ContactFormButton, ContactFormTextarea, ContactFormInput, ContactFormLabel } from './ContactStyles';
+import { ContactIconBox, ContactIcons, ContactSuccessed, ContactFormButton, ContactFormTextarea, ContactFormInput, ContactFormLabel, ContactFormLabelFrame, ContactButtonFrame } from './ContactStyles';
 
 export const ContactContents = () => {
   return (
@@ -38,34 +38,42 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h1>お問い合わせ</h1>
-      <ContactFormLabel htmlFor="name">
-        名前
-      </ContactFormLabel>
+      <ContactFormLabelFrame>
+        <ContactFormLabel htmlFor="name">
+          名前
+        </ContactFormLabel>
+      </ContactFormLabelFrame>
       <ContactFormInput
         id="name"
         name="name"
+        placeholder="甲本健太"
       />
       <ValidationError
         prefix="Name"
         field="name"
         errors={state.errors}
       />
-      <ContactFormLabel htmlFor="email">
-        メールアドレス
-      </ContactFormLabel>
+      <ContactFormLabelFrame>
+        <ContactFormLabel htmlFor="email">
+          メールアドレス
+        </ContactFormLabel>
+      </ContactFormLabelFrame>
       <ContactFormInput
         id="email"
         type="email"
         name="email"
+        placeholder='example@email.com'
       />
       <ValidationError
         prefix="Email"
         field="email"
         errors={state.errors}
       />
-      <ContactFormLabel htmlFor="email">
-        お問い合わせ内容
-      </ContactFormLabel>
+      <ContactFormLabelFrame>
+        <ContactFormLabel htmlFor="message">
+          お問い合わせ内容
+        </ContactFormLabel>
+      </ContactFormLabelFrame>
       <ContactFormTextarea
         id="message"
         name="message"
@@ -75,9 +83,11 @@ export const ContactForm = () => {
         field="message"
         errors={state.errors}
       />
-      <ContactFormButton type="submit" disabled={state.submitting}>
-        送信
-      </ContactFormButton>
+      <ContactButtonFrame>
+        <ContactFormButton type="submit" disabled={state.submitting}>
+          送信
+        </ContactFormButton>
+      </ContactButtonFrame>
     </form>
   );
 };
