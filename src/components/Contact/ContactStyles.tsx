@@ -112,6 +112,7 @@ export const ContactFormTextarea = styled.textarea`
     font-size: 18px;
   `}
   ${sp`
+    height: 80px;
     font-size: 18px;
   `}
 `;
@@ -130,6 +131,7 @@ export const ContactFormButton = styled.button`
   font-size: 20px;
   font-weight: bold;
   line-height: 10px;
+  color: black;
   :hover {
     background-color: #000;
     color: white;
