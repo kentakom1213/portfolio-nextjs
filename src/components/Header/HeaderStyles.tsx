@@ -35,6 +35,10 @@ export const HeaderIconBox = styled.div`
   position: relative;
   width: 80px;
   margin: 20px 10px;
+  :hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
+  }
   ${sp`
     width: 60px;
     margin: 20px 5px;
@@ -83,6 +87,9 @@ export const HeaderLink = styled.a<{ underline: boolean }>`
   line-height: 100px;
   padding: 0 10px;
   text-decoration: ${(props) => props.underline ? 'underline' : 'none'};
+  :hover {
+    transform: scale(1.1);
+  }
   ${tab`
     font-size: 25px;
     line-height: 65px;
