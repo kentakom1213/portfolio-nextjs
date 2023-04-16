@@ -144,11 +144,11 @@ export const ExperienceOptimizeText = styled.div`
     grid-row: 1 / 2;
     &:before {
       content: "→";
-      font-size: 40px;
+      font-size: 35px;
       float: right;
       position: relative;
-      left: -30px;
-      top: 5px;
+      left: -20px;
+      top: 8px;
     }
   `}
   ${sp`
@@ -193,11 +193,11 @@ export const ExperienceKeisanryoText = styled.div`
     margin: auto 5px;
     &:before {
       content: "←";
-      font-size: 40px;
+      font-size: 35px;
       float: left;
       position: relative;
       left: 30px;
-      top: 5px;
+      top: 8px;
     }
   `}
   ${sp`

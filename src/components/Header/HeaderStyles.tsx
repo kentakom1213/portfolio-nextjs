@@ -3,12 +3,16 @@ import { pc, sp, tab } from "../../styles/Global/media";
 
 export const HeaderContaner = styled.header`
   width: 100%;
-  margin: 0 auto 40px;
   padding: 10px 50px;
   ${pc`
     height: 120px;
+    margin: 0 auto 40px;
+  `}
+  ${tab`
+    margin: 0 auto 30px;
   `}
   ${sp`
+    margin: 0 auto 20px;
     padding: 10px 20px;
   `}
 `;
