@@ -3,7 +3,7 @@ import { AboutHeadLine, AboutHeadLineTag, AboutTitle } from './AboutStyles';
 
 export const AboutImage = () => {
   return (
-    <Image src="/images/seattle2.JPG" alt='komoto kenta' fill style={{ borderRadius: '20px', objectFit: 'cover' }}></Image>
+    <Image src="/images/about/at_seattle.JPG" alt='komoto kenta' fill style={{ borderRadius: '20px', objectFit: 'cover' }}></Image>
   )
 };
 

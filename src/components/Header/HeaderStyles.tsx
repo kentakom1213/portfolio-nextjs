@@ -46,8 +46,8 @@ export const HeaderIconBox = styled.div`
 `;
 
 export const HeaderTitle = styled.h1`
+  margin: auto;
   font-size: 35px;
-  line-height: 100px;
   ${tab`
     font-size: 30px;
     line-height: 90px;
@@ -83,9 +83,9 @@ export const HeaderLinkFlex = styled.div`
 `;
 
 export const HeaderLink = styled.a<{ underline: boolean }>`
-  font-size: 30px;
-  line-height: 100px;
+  margin: auto;
   padding: 0 10px;
+  font-size: 30px;
   text-decoration: ${(props) => props.underline ? 'underline' : 'none'};
   :hover {
     transform: scale(1.1);
