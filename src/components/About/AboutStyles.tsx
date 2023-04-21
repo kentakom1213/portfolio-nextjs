@@ -20,7 +20,7 @@ export const AboutImageFrame = styled.div`
 `;
 
 export const AboutTextFrame = styled.div`
-  padding: 5% 80px;
+  padding: 5% 50px;
   ${sp`
     padding: 5% 20px;
   `}

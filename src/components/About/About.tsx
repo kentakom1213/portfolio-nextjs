@@ -18,7 +18,7 @@ export const AboutText = () => {
           所属
         </AboutHeadLineTag>
         名古屋大学情報学部<br/>
-        自然情報学科数理情報系専攻
+        自然情報学科数理情報系
       </AboutHeadLine>
       <AboutHeadLine fontSize={35}>
         <AboutHeadLineTag>
