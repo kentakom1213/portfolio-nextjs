@@ -89,6 +89,7 @@ export const HeaderLink = styled.a<{ underline: boolean }>`
   text-decoration: ${(props) => props.underline ? 'underline' : 'none'};
   :hover {
     transform: scale(1.1);
+    transition: 0.5s;
   }
   ${tab`
     font-size: 25px;
