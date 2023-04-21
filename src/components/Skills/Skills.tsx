@@ -68,6 +68,9 @@ export const SkillFrameworks = () => {
         <SkillTemplate title="Next.js" image="/images/skills/next.svg">
           このポートフォリオを作成する際に使用しました。
         </SkillTemplate>
+        <SkillTemplate title="Axum" image="/images/skills/rust.svg">
+          Rust製のWebフレームワークです。WebAPIの作成に利用しました。
+        </SkillTemplate>
       </SkillsContainer>
     </>
   );
@@ -84,7 +87,7 @@ export const SkillSoftwares = () => {
           コードの管理に使用しています。
         </SkillTemplate>
         <SkillTemplate title="GitHub" image="/images/skills/github.svg">
-          チーム開発等に利用しています。<br/>アカウント：<TextLink text="kentakom1213" link="https://github.com/kentakom1213/" />
+          チーム開発等に利用しています。<br />アカウント：<TextLink text="kentakom1213" link="https://github.com/kentakom1213/" />
         </SkillTemplate>
         <SkillTemplate title="Docker" image="/images/skills/docker.webp">
           開発の環境構築、サーバへのデプロイに使用しています。
