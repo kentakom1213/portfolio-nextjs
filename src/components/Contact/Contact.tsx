@@ -7,7 +7,6 @@ export const ContactContents = () => {
     <>
       <ContactIcons>
         <ContactIconLink link="https://github.com/kentakom1213/" src="/images/contact/github-fill.svg" alt="github" />
-        <ContactIconLink link="mailto:kentakom1213@gmail.com" src="/images/contact/mail-fill.svg" alt="mail" />
         <ContactIconLink link="https://powell1213.com" src="/images/contact/links-fill.svg" alt="blog" />
       </ContactIcons>
     </>
