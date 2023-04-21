@@ -22,6 +22,8 @@ export const SkillsContainerTitle = styled.h2`
   margin: 15px 0 10px 0;
   padding: 0 30px;
   ${pc`
+    height: 30px;
+    line-height: 30px;
     margin: 20px 0 15px 0;
     font-size: 30px;
   `}
