@@ -5,7 +5,7 @@ import {
   SimpleInterpolation,
 } from 'styled-components';
 
-const pc_min_width: number = 1050;
+const pc_min_width: number = 1080;
 const tab_min_width: number = 700;
 
 export const sp = (
