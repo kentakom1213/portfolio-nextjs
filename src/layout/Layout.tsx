@@ -11,7 +11,7 @@ export const Layout = ({ pageType, width, children }: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/powellicon.svg" />
       </Head>
-      <Header pageType={ pageType } />
+      <Header pageType={pageType} />
       <Container width={width}>
         {children}
       </Container>

@@ -40,8 +40,8 @@ export const HeaderIconBox = styled.div`
     transition: 1.5s;
   }
   ${sp`
-    width: 60px;
-    margin: 20px 5px;
+    width: 50px;
+    margin: 20px 4px;
   `}
 `;
 
@@ -53,7 +53,7 @@ export const HeaderTitle = styled.h1`
     line-height: 90px;
   `}
   ${sp`
-    font-size: 25px;
+    font-size: 23px;
     line-height: 80px;
   `}
 `;
@@ -64,7 +64,7 @@ export const HeaderSubTitle = styled.span`
     font-size: 25px;
   `}
   ${sp`
-    font-size: 15px;
+    font-size: 12px;
   `}
 `;
 
@@ -79,6 +79,7 @@ export const HeaderLinkFlex = styled.div`
   `}
   ${sp`
     height: 50px;
+    overflow-x: auto;
   `}
 `;
 
