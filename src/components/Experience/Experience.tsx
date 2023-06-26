@@ -80,7 +80,7 @@ export const ExperienceWeb = () => {
         </ExperienceGridImage>
       </ExperienceGrid>
       <ExperienceGrid ratio={[2, 3]}>
-        <ExperienceSubpage title="個人ブログ" url="https://powell1213.com">
+        <ExperienceSubpage title="個人ブログ" url="https://blog.powell1213.com">
           Hexoという静的サイトジェネレータで個人のブログを公開しています。
           内容は、競技プログラミングのことや授業で学んだことなど、自分が勉強したことのアウトプットが中心です。
         </ExperienceSubpage>
