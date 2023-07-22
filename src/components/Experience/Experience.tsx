@@ -39,10 +39,10 @@ export const ExperienceKyopro = () => {
       </ExperienceText>
       <ExperienceGrid>
         <ExperienceGridImage>
-          <Image src="/images/experience/atcoder-rating-transition-graph.png" alt="AtCoderのレート遷移" fill style={{ borderRadius: "20px", objectFit: "contain" }}></Image>
+          <Image src="/images/experience/atcoder-rating-transition-graph-cyan.png" alt="AtCoderのレート遷移" fill style={{ borderRadius: "20px", objectFit: "contain" }}></Image>
         </ExperienceGridImage>
         <ExperienceGridImage>
-          <Image src="/images/experience/atcoder-rating-hist.png" alt="AtCoderのレート遷移" fill style={{ borderRadius: "20px", objectFit: "contain" }}></Image>
+          <Image src="/images/experience/atcoder-rating-hist-cyan.png" alt="AtCoderのレート遷移" fill style={{ borderRadius: "20px", objectFit: "contain" }}></Image>
         </ExperienceGridImage>
       </ExperienceGrid>
       <ExperienceGrid ratio={[3, 4]}>
