@@ -34,7 +34,7 @@ export const ExperienceKyopro = () => {
       <ExperienceText>
         競技プログラミングは、様々なデータやそれに対する操作をコンピュータ上で効率的に行うための知識や能力を競う大会です。
         そのうち、日本で最も人気のあるAtCoderというコンテストサイトに大学1年生の時から継続的に参加しており、
-        現在のレーティングは<SpanColor color="green">緑色</SpanColor>（登録者のうち上位30%に当たる）です。
+        現在のレーティングは<SpanColor color="#00C0C0">水色</SpanColor>（登録者のうち上位15%に当たる）です。
         現在も、コンテストを通じてアルゴリズムやデータ構造といった、コーディングをする上での重要な考え方を学んでいます。
       </ExperienceText>
       <ExperienceGrid>
