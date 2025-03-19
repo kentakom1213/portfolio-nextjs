@@ -1,7 +1,15 @@
-import { HeaderContaner, HeaderIconBox, HeaderLink, HeaderLinkFlex, HeaderTitle, HeaderSubTitle, HeaderTitleFlex } from "./HeaderStyles";
+import {
+  HeaderContaner,
+  HeaderIconBox,
+  HeaderLink,
+  HeaderLinkFlex,
+  HeaderTitle,
+  HeaderSubTitle,
+  HeaderTitleFlex,
+} from "./HeaderStyles";
 import Image from "next/image";
 
-export const Header = ({ pageType } : { pageType: string }) => {
+export const Header = ({ pageType }: { pageType: string }) => {
   return (
     <HeaderContaner>
       <HeaderTitleFlex>
@@ -19,6 +27,9 @@ export const Header = ({ pageType } : { pageType: string }) => {
         <HeaderLink href="/skills" underline={pageType === "skills"}>
           skills
         </HeaderLink>
+        <HeaderLink href="/timeline" underline={pageType === "timeline"}>
+          timeline
+        </HeaderLink>
         <HeaderLink href="/experience" underline={pageType === "experience"}>
           experience
         </HeaderLink>
@@ -27,5 +38,5 @@ export const Header = ({ pageType } : { pageType: string }) => {
         </HeaderLink>
       </HeaderLinkFlex>
     </HeaderContaner>
-  )
+  );
 };
