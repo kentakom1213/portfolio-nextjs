@@ -36,7 +36,7 @@ export const ExperienceTitle = styled.h1`
 
 export const ExperienceSubTitle = styled.h2<{ hasLink: string | undefined }>`
   text-align: center;
-  text-decoration: ${props => props.hasLink ? "underline" : "none"};
+  text-decoration: ${(props) => (props.hasLink ? "underline" : "none")};
   ${pc`
     margin: 10px auto 20px;
     font-size: 25px;
