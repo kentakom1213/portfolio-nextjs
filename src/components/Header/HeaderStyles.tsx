@@ -6,7 +6,7 @@ export const HeaderContaner = styled.header`
   padding: 10px 50px;
   ${pc`
     height: 120px;
-    margin: 0 auto 40px;
+    margin: 0 autzo 40px;
   `}
   ${tab`
     margin: 0 auto 30px;

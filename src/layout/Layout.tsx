@@ -9,7 +9,7 @@ export const Layout = ({
 	children,
 }: {
 	pageType: string;
-	width: number;
+	width: number | null;
 	children: ReactNode;
 }) => {
 	return (

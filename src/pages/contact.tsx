@@ -7,7 +7,7 @@ import { ContactContents, ContactForm } from "@/components/Contact/Contact";
 
 export const Contact = () => {
 	return (
-		<Layout pageType="contact">
+		<Layout width={null} pageType="contact">
 			<ContactFrame>
 				<ContactContents />
 				<ContactFormFrame>
