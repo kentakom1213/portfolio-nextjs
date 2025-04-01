@@ -152,18 +152,18 @@ const Tooltip = styled.div`
 
 // 追加: イベント詳細表示用の枠
 export const EventDetailFrame = styled.div`
-  margin: 0 10px 0 100px;
+  margin: 0 10px 0 50px;
   padding: 20px;
   position: relative;
   border: 3px solid #000;
   border-radius: 20px;
 `;
 
-const ConnectorLine = styled.div`
+const ConnectorLine = styled.div<{ leftOffset: number }>`
   position: absolute;
-  left: 20px;
+  left: ${(props) => props.leftOffset}px;
   top: 50%;
-  width: 30px;
+  width: ${(props) => 50 - props.leftOffset}px;
   height: 2px;
   background-color: #000;
 `;
@@ -216,7 +216,9 @@ const Timeline: React.FC<{ events: Event[] }> = ({ events }) => {
 
               {/* イベントの詳細枠と線（スタック表示） */}
               <DetailContainer topPosition={detailY}>
-                <ConnectorLine />
+                <ConnectorLine
+                  leftOffset={(idx - events.length) * bar_width + 8}
+                />
                 <EventDetailFrame>{event.description}</EventDetailFrame>
               </DetailContainer>
             </Fragment>
