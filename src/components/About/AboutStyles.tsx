@@ -36,7 +36,7 @@ export const AboutTitle = styled.h1`
 `;
 
 export const AboutHeadLine = styled.h2<{ fontSize: number }>`
-  font-size: ${props => props.fontSize}px;
+  font-size: ${(props) => props.fontSize}px;
   padding: 15px 0;
   ${sp`
     font-size: 20px;
