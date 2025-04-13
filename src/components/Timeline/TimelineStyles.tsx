@@ -33,8 +33,8 @@ export const EventContainer = styled.div`
 `;
 
 export const EventBarContainer = styled.div<{
-  leftOffset: number;
-  topPosition: number;
+	leftOffset: number;
+	topPosition: number;
 }>`
   position: absolute;
   display: flex;

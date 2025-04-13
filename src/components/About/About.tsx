@@ -20,21 +20,23 @@ export const AboutText = () => {
 					甲本 健太<rt>こうもと けんた</rt>
 				</ruby>
 			</AboutTitle>
-			<AboutHeadLine fontSize={30}>
+			<AboutHeadLine fontSize={25}>
 				<AboutHeadLineTag>所属</AboutHeadLineTag>
-				名古屋大学情報学部
+				名古屋大学情報学研究科
 				<br />
-				自然情報学科数理情報系
+				数理情報系専攻 M1
 			</AboutHeadLine>
-			<AboutHeadLine fontSize={35}>
-				<AboutHeadLineTag>生年月日</AboutHeadLineTag>
-				2002 / 12 / 13
+			<AboutHeadLine fontSize={25}>
+				<AboutHeadLineTag>研究分野</AboutHeadLineTag>
+				グラフアルゴリズム
+				<br />
+				列挙アルゴリズム
 			</AboutHeadLine>
-			<AboutHeadLine fontSize={24.5}>
+			<AboutHeadLine fontSize={23}>
 				<AboutHeadLineTag>ひとこと</AboutHeadLineTag>
-				高校生の頃にプログラミングを始めました。
-				<br />
-				現在は、アルゴリズムや数理最適化に興味を持っています。
+				アルゴリズムの理論と、それを用いた実際のプログラムの高速化に興味を持っています。
+				また、プログラミング言語 Rust に興味を持っており業務での開発や OSS
+				開発などに利用しています。
 			</AboutHeadLine>
 		</>
 	);

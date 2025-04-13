@@ -36,10 +36,16 @@ const SkillTemplate = ({
 	);
 };
 
-const TextLink = ({ text, link }: { text: string; link: string }) => {
+const TextLink = ({
+	href,
+	children,
+}: {
+	href: string;
+	children: ReactNode;
+}) => {
 	return (
-		<Link href={link} style={{ textDecoration: "underline" }}>
-			{text}
+		<Link href={href} style={{ textDecoration: "underline" }}>
+			{children}
 		</Link>
 	);
 };
@@ -49,17 +55,14 @@ export const SkillLanguages = () => {
 		<>
 			<SkillsContainerTitle>{"> "}Language</SkillsContainerTitle>
 			<SkillsContainer>
+				<SkillTemplate title="Rust" image="/images/skills/rust.svg">
+					Webバックエンドの高速化などでの使用経験があります。
+				</SkillTemplate>
 				<SkillTemplate title="Python" image="/images/skills/python.svg">
 					Web開発や機械学習などに使用しています。
 				</SkillTemplate>
-				<SkillTemplate title="Rust" image="/images/skills/rust.svg">
-					競技プログラミングやWebAPIの作成などに使用しています。
-				</SkillTemplate>
-				<SkillTemplate title="JavaScript" image="/images/skills/js.svg">
-					主にWeb開発に使用しています。
-				</SkillTemplate>
 				<SkillTemplate title="TypeScript" image="/images/skills/ts.svg">
-					Rust同様、型がしっかりしているので気に入っています。
+					Webフロントエンドの開発に利用しています。
 				</SkillTemplate>
 				<SkillTemplate title="Html" image="/images/skills/html.svg">
 					Web開発に使用しています。
@@ -78,7 +81,7 @@ export const SkillFrameworks = () => {
 			<SkillsContainerTitle>{"> "}Framework</SkillsContainerTitle>
 			<SkillsContainer>
 				<SkillTemplate title="Django" image="/images/skills/django.svg">
-					<TextLink text="NUOCW" link="https://ocw.nagoya-u.jp/" />
+					<TextLink href="https://ocw.nagoya-u.jp/">NUOCW</TextLink>
 					で、内部向けのリソース管理ソフトを作成する際に使用しました。
 				</SkillTemplate>
 				<SkillTemplate title="React" image="/images/skills/react.svg">
@@ -88,7 +91,16 @@ export const SkillFrameworks = () => {
 					このポートフォリオを作成する際に使用しました。
 				</SkillTemplate>
 				<SkillTemplate title="Axum" image="/images/skills/rust.svg">
-					Rust製のWebフレームワークです。WebAPIの作成に利用しました。
+					Rust製のWebフレームワークです。
+					<TextLink href="https://sudoku.pwll.dev/">数独ソルバ</TextLink>
+					のAPI開発に利用しました。
+				</SkillTemplate>
+				<SkillTemplate title="egui" image="/images/skills/rust.svg">
+					Rust製のGUIフレームワークです。
+					<TextLink href="https://kentakom1213.github.io/graph-editor/">
+						Graph Editor
+					</TextLink>
+					の開発に利用しました。
 				</SkillTemplate>
 			</SkillsContainer>
 		</>
@@ -105,12 +117,6 @@ export const SkillSoftwares = () => {
 				</SkillTemplate>
 				<SkillTemplate title="GitHub" image="/images/skills/github.svg">
 					チーム開発等に利用しています。
-					<br />
-					アカウント：
-					<TextLink
-						text="kentakom1213"
-						link="https://github.com/kentakom1213/"
-					/>
 				</SkillTemplate>
 				<SkillTemplate title="Docker" image="/images/skills/docker.webp">
 					開発の環境構築、サーバへのデプロイに使用しています。
